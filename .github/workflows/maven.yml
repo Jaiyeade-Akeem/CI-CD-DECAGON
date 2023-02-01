@@ -33,7 +33,7 @@ jobs:
     - uses: mr-smithers-excellent/docker-build-push@v5
     - name: Build & push Docker image
       run: |
-        docker build -t haykay364/springboot-cicd-git-action:v1.0 -f Dockerfile.ci .
+        docker build -t haykay364/springboot-cicd-git-action:v1.0 -f Dockerfile .
         docker push haykay364/springboot-cicd-git-action:v1.0
         docker tag haykay364/springboot-cicd-git-action:v1.0 haykay364/springboot-cicd-git-action:latest
         docker push haykay364/springboot-cicd-git-action:latest
