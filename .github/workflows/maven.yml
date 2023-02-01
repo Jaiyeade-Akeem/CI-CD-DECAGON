@@ -34,7 +34,7 @@ jobs:
       run: |
         IMAGE=haykay364/springboot-cicd-git-action
         VERSION=v1.0
-        docker build -t ${IMAGE}:${VERSION} -f Dockerfile.ci .
+        docker build -t ${IMAGE}:${VERSION} -f Dockerfile .
         echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
         docker push ${IMAGE}:${VERSION}
         docker tag ${IMAGE}:${VERSION} ${IMAGE}:latest
