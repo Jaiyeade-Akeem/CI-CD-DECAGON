@@ -17,7 +17,7 @@ public class SwaggerConfiguration {
                     .info(new Info()
                             .title("Decagon Life Project Api")
                             .version("1.1")
-                            .description("Decagon Life Project App API Documentation")
+                            .description("CI CD Project Demo App API Documentation")
                     )
                     .addSecurityItem(new SecurityRequirement().addList(securitySchemaName))
                     .components(new Components()
