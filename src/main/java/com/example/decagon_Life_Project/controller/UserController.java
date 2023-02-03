@@ -1,11 +1,9 @@
 package com.example.decagon_Life_Project.controller;
 
-import com.example.decagon_Life_Project.entities.UserEntity;
 import com.example.decagon_Life_Project.models.UserEntityDto;
 import com.example.decagon_Life_Project.serviceImpl.UserServiceImpl;
 import com.example.decagon_Life_Project.utils.BaseResponse;
 import lombok.AllArgsConstructor;
-import lombok.Data;
 import lombok.SneakyThrows;
 import org.springframework.web.bind.annotation.*;
 

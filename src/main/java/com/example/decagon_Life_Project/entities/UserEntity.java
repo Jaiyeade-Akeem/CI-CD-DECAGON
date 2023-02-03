@@ -14,7 +14,7 @@ import java.io.Serializable;
 @Setter @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-//public class UserEntity implements Serializable {
+public class UserEntity implements Serializable {
     private static final long serialVersionUID = 2L;
     @Id
     @Column(name = "id", nullable = false)

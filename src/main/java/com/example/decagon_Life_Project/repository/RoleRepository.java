@@ -4,7 +4,7 @@ import com.example.decagon_Life_Project.entities.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import java.util.Optional;
+import java.util.Optional; //its working
 
 @Repository
 public interface RoleRepository extends JpaRepository<Role, Long> {
