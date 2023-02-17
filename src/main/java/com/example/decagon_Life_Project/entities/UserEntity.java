@@ -7,14 +7,14 @@ import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 import java.io.Serializable;
 
-
+@Entity
+@Data
+@Builder
+@Setter @Getter
+@AllArgsConstructor
+@NoArgsConstructor
 //
-public class UserEntity implements Serializable {@Entity
-//@Data
-//@Builder
-//@Setter @Getter
-//@AllArgsConstructor
-//@NoArgsConstructor
+public class UserEntity implements Serializable {
     private static final long serialVersionUID = 2L;
     @Id
     @Column(name = "id", nullable = false)
